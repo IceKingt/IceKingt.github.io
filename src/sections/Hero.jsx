@@ -16,7 +16,7 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative overflow-hidden">
+    <section id="hero" className="relative"> {/* previously.... className = "relative overflow-hidden"*/}
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="" />
       </div>
@@ -64,11 +64,16 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <figure>
-          <div className="hero-3d-layout hidden md:block">
+        <figure className="w-full flex justify-center">
+          <div className="hero-3d-layout sticky top-24">
             <Avatar />
           </div>
         </figure>
+        {/*<figure>
+          <div className="hero-3d-layout hidden md:block">
+            <Avatar />
+          </div>
+        </figure>*/}
       </div>
 
       <AnimatedCounter />
