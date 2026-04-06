@@ -64,16 +64,17 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
+        {/* not ori
         <figure className="w-full flex justify-center">
           <div className="hero-3d-layout sticky top-24">
             <Avatar />
           </div>
-        </figure>
-        {/*<figure>
+        </figure>*/}
+        <figure>
           <div className="hero-3d-layout hidden md:block">
             <Avatar />
           </div>
-        </figure>*/}
+        </figure>
       </div>
 
       <AnimatedCounter />
